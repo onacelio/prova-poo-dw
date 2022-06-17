@@ -175,3 +175,12 @@ main {
     position: fixed;
     margin-left: 870px;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, rgb(75, 25, 121), #333);
+    height: 10vh;
+    color: aliceblue;
+}
