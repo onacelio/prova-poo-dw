@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 1px;
+}
+
+header {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+header h1 {
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 1.5vh;
+    text-transform: uppercase;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-left: 50%;
+    margin-top: -7vh;
+    text-transform: uppercase;
+    position: relative;
+}
+
+header ul li {
+    border-bottom: 3px solid blueviolet;
+    margin-left: 10px;
+}
+
+header ul button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+    padding: 3px;
+    width: 80px;
+    color: black;
+}
+
+.slide {
+    display: flex;
+    min-height: 100vh;
+    padding: 1px;
+    flex-direction: row;
+}
+
+.slide h2 {
+    margin-top: 30px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: blueviolet;
+}
+
+.imagens, .componentes, .desenvolvimento-web, .linguagens-dw, .o-que-e-poo, .para-que-serve-e-linguagens, .projeto-inicial, .texto-projeto-inicial, .projetos-anteriores-slide, .projetos-anteriores-texto {
+    width: 50%;
+}
+
+.imagens {
+    margin-top: 30px;
+}
+
+.imagens img {
+    width: 35%;
+    height: 35%;
+}
+
+.imagens .html{
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.imagens .js {
+    margin-left: 35%;
+}
+
+ul {
+    list-style: none;
+    color: blueviolet;
+    margin-top: 20px;
+}
+
+.slide ul li:before {
+    content: '\2022';
+    margin: 0 10px;
+    color: blueviolet;
+}
+
+li {
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 20px;
+    color: black;
+}
+
+.componentes, .desenvolvimento-web, .linguagens-dw, .o-que-e-poo, .para-que-serve-e-linguagens, .projeto-inicial, .texto-projeto-inicial, .projetos-anteriores-slide, .projetos-anteriores-texto {
+    padding: 10px;
+    margin-top: 40px;
+    min-height: 70vh;
+}
+
+p {
+    margin-top: 10px;
+    text-align: justify;
+    padding-right: 50px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.349);
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.linguagens-dw img {
+    margin-left: 35%;
+    margin-top: -100px;
+    width: 400px;
+}
+
+ul p {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.projeto-inicial img {
+    width: 100%;
+    margin: 0px 0 0 0;
+}
+
+.texto-projeto-inicial h2 {
+    font-size: 20px;
+}
+
+.texto-projeto-inicial p {
+    font-size: 13px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 200px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-slider {
+    width: 25%;
+    position: relative;
+}
+
+.slide-slider img {
+    width: 1300px;
+    height: 700px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 90%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: 1s;
+}
+
+.manual-btn:hover {
+    background-color: blueviolet;
+}
+
+#radio-1:checked ~ .first {
+    transition: 2s;
+    margin-left: 0;
+}
+
+#radio-2:checked ~ .first {
+    transition: 2s;
+    margin-left: -25%;
+}
+
+.navigation-auto div {
+    border: 2px solid blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: 8.5px;
+    margin-top: -1px;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 90%;
+    margin-top: 159px;
+    display: flex;
+    justify-content: center;
+}
+
+#radio-1:checked ~ .navigation-auto .auto-btn-1 {
+    background-color: blueviolet;
+}
+
+#radio-2:checked ~ .navigation-auto .auto-btn-2 {
+    background-color: blueviolet;
+}
+
+.projetos-anteriores-slide .slider-2 {
+    margin: 15% 0;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.projetos-anteriores-slide .slides-2 {
+    width: 400%;
+    height: 200px;
+    display: flex;
+}
+
+.projetos-anteriores-slide .slides-2 input {
+    display: none;
+}
+
+.projetos-anteriores-slide .slide-slider-2 {
+    width: 25%;
+    position: relative;
+}
+
+.projetos-anteriores-slide .slide-slider-2 img {
+    width: 200%;
+    height: 350%;
+    margin-top: -70px;
+}
+
+.projetos-anteriores-slide .manual-navigation-2 {
+    position: absolute;
+    width: 90%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.projetos-anteriores-slide .manual-btn-2 {
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 190px;
+    transition: 1s;
+    border-radius: 10px;
+}
+.projetos-anteriores-slide .manual-btn-2:not(last-child) {
+    margin-right: 35px;
+}
+
+.projetos-anteriores-slide .manual-btn-2:hover {
+    background-color: blueviolet;
+}
+
+.projetos-anteriores-slide #radio-projetos-1:checked ~ .first-2 {
+    transition: 2s;
+    margin-left: 0;
+}
+
+.projetos-anteriores-slide #radio-projetos-2:checked ~ .first-2 {
+    transition: 2s;
+    margin-left: -25%;
+}
+
+.projetos-anteriores-slide #radio-projetos-3:checked ~ .first-2 {
+    transition: 2s;
+    margin-left: -50%;
+}
+
+.projetos-anteriores-slide #radio-projetos-4:checked ~ .first-2 {
+    transition: 2s;
+    margin-left: -75%;
+}
+
+.projetos-anteriores-slide .navigation-auto-2 div {
+    border: 2px solid blueviolet;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 89px;
+}
+
+.projetos-anteriores-slide .navigation-auto-2 div:not(last-child) {
+    margin-right: 32px;
+}
+
+.projetos-anteriores-slide .navigation-auto-2 {
+    position: absolute;
+    width: 90%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.projetos-anteriores-slide #radio-projetos-1:checked ~ .navigation-auto-2 .auto-btn-projetos-1 {
+    background-color: blueviolet;
+}
+
+.projetos-anteriores-slide #radio-projetos-2:checked ~ .navigation-auto-2 .auto-btn-projetos-2 {
+    background-color: blueviolet;
+}
+
+.projetos-anteriores-slide #radio-projetos-3:checked ~ .navigation-auto-2 .auto-btn-projetos-3 {
+    background-color: blueviolet;
+}
+
+.projetos-anteriores-slide #radio-projetos-4:checked ~ .navigation-auto-2 .auto-btn-projetos-4 {
+    background-color: blueviolet;
+}
+
+#funcionamento-do-projeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202631;
+}
+
+.projeto {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 64px;
+    color: blueviolet;
+    border: 8px solid blueviolet;
+    padding: 16px 64px;
+    border-radius: 16px;
+    cursor: pointer;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 23px blueviolet;
+    box-shadow: inset 0 0 32px blueviolet, 0 0 32px blueviolet;
+    position: relative;
+}
+
+.projeto::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: blueviolet;
+    left: 0;
+    top: 120%;
+    transform: perspective(64px) rotateX(40deg) scale(1, 0.35);
+    filter: blur(64px);
+    opacity: 0.7;
+}
+
+.projeto::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: blueviolet;
+    box-shadow: 0 0 128px 32px blueviolet;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+.projeto:hover, .projeto:focus {
+    color: #202631;
+}
+
+.projeto:hover::after, .projeto:focus::after {
+    opacity: 1;
+}
+
+.projeto:hover::before, .projeto:focus::before {
+    opacity: 1;
+}

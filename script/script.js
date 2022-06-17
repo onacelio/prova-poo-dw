@@ -16,10 +16,35 @@ class Produtos {
             imagem: 'monster',
             categoria: 'BEBIDA'
         }, {
-            nome: 'Pizza', 
-            preco: 20.00,
-            imagem: 'pizza',
+            nome: 'Carne', 
+            preco: 12.00,
+            imagem: 'carne',
             categoria: 'ALIMENTO GORDUROSO'
+        }, {
+            nome: 'Manga',
+            preco: 3.00,
+            imagem: 'manga',
+            categoria: 'FRUTA'
+        }, {
+            nome: 'Doritos',
+            preco: 6.00, 
+            imagem: 'doritos',
+            categoria: 'SALGADINHO'
+        }, {
+            nome: 'Skol', 
+            preco: 5.00, 
+            imagem: 'skol', 
+            categoria: 'ALCOOL'
+        }, {
+            nome: 'Miojo',
+            preco: 3.00,
+            imagem: 'miojo',
+            categoria: 'ALIMENTO NADA SAUDÁVEL'
+        }, {
+            nome: 'Danone', 
+            preco: 6.00,
+            imagem: 'danone',
+            categoria: 'FRIOS'
         }]
     }
     
@@ -45,7 +70,7 @@ class Produtos {
             button.setAttribute("class", "btn btn-primary item-button")
             button.innerText = 'ADICIONAR AO CARRINHO'
             span.innerText = this.produtos[i].nome
-            imagem.src = `imagens/${this.produtos[i].imagem}.jpg`
+            imagem.src = `imagens/produtos/${this.produtos[i].imagem}.jpg`
             spanPreco.innerText = 'R$: ' + this.produtos[i].preco
 
             // COLOCANDO NO HTML
@@ -212,14 +237,33 @@ class Produtos {
 
     comprar() {
         let carrinhoLinhas = document.getElementsByClassName('carrinho-linha')
+        let carrinhoTitulo = document.getElementsByClassName('carrinho-titulo')
         let total = document.querySelector('.preco-total').innerText
+
         if(carrinhoLinhas.length == 1) {
             alert('VOCÊ DEVE COLOCAR ITENS NO CARRINHO!')
         } else {
+            for(let i = 0; i < carrinhoTitulo.length; i++) {
+                
+                if(carrinhoTitulo[i].innerText == 'SKOL') {
+                    console.log('Isso é skol: ', carrinhoTitulo[i].innerText)
+                    alert('A venda de bebidas alcoolicas é proibida nas escolas!')
+                    if(carrinhoLinhas.length == 2) {
+                        console.log('Entrou')
+                        document.querySelector('.preco-total').innerText = 'R$: 0'
+                    }
+                    carrinhoLinhas[i + 1].remove()
+                    this.atualizarTotal()
+                } 
+            }
+            if(carrinhoLinhas.length > 1) {
+                console.log('POrque não achama caralho')
             alert(`COMPRA EFETUADA COM SUCESSO! 
             O VALOR TOTAL DA COMPRA É DE: ${total}`)
             window.location.reload()
+            }
         }
+        
     }
 }
 

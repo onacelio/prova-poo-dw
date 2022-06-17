@@ -12,6 +12,8 @@ header {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
+    position: sticky;
+    top: 0;
 }
 
 main {
@@ -35,6 +37,7 @@ main {
 
 .item-loja {
     margin: 10px;
+    width: 25%;
     border: 1px solid black;
     padding: 5px;
     border-radius: 3px;
@@ -52,12 +55,13 @@ main {
 }
 
 .item-imagem {
-    width: 250px;
-    height: 150px;
+    width: 90%;
+    height: 50%;
 }
 
 .item-detalhes {
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 5px;
 }
@@ -165,4 +169,9 @@ main {
 
 .carrinho img {
     margin-right: 5px;
+}
+
+.carrinho-fixo {
+    position: fixed;
+    margin-left: 870px;
 }

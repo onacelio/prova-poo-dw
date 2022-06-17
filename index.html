@@ -1,33 +1,262 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>LOJA DE COMPRAS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style/slide.css">
+    <title>PROVA POO-DW</title>
 </head>
 <body>
     <header>
-        LOJA
+        <h1>Prova Dw e POO</h1>
+        <ul>
+            <li><a href="#inicio"><button>INICIO</button></a></li>
+            <li><a href="#dw"><button>1</button></a></li>
+            <li><a href="#poo"><button>2</button></a></li>
+            <li><a href="#como-surgiu-o-projeto"><button>3</button></a></li>
+            <li><a href="#projetos-anteriores"><button>4</button></a></li>
+            <li><a href="#funcionamento-do-projeto"><button>5</button></a></li>
+        </ul>
     </header>
-    
+
     <main>
-        <section class="conteiner sessao-conteudo">
-            <h2>PRODUTOS</h2>
-            <section class="items-loja"></section>
+        <section class="slide" id="inicio">
+            <section class="imagens primer">
+                <img src="imagens/html.png" alt="logo-html" class="html">
+                <img src="imagens/css.png" alt="logo-css" class="css">
+                <img src="imagens/js.png" alt="logo-js" class="js">
+            </section>
+            <section class="componentes second">
+                <h2>Componentes: </h2>
+                <p>
+                    <ul>
+                        <li>Antônio Nacélio;</li>
+                        <li>Cibele Araújo;</li>
+                        <li>Glória Maria;</li>
+                        <li>Gustavo Henrique;</li>
+                        <li>Isac Leite;</li>
+                        <li>Maria Clara Dantas;</li>
+                        <li>Maria de Fátima;</li>
+                        <li>Maria Emilly;</li>
+                        <li>Maria Layana;</li>
+                        <li>Raissa Nunes;</li>
+                        <li>Victor Hugo.</li>
+                    </ul>
+                </p>
+            </section>
         </section>
 
-        <section class="conteiner sessao-conteudo">
-            <h2>CARRINHO</h2>
-            <section class="carrinho"></section>
+        <!--TÓPICOS PARA A PROVA DE DESENVOLVIMENTO WEB E POO: 
+            DESENVOLVIMENTO WEB: 
+                O que é desenvolvimento WEB:
+                Linguagens usadas no Desenvolvimento WEB: 
+            POO:
+            COMO SURGIU NOSSO PROJETO:
+            PROJETOS ANTERIORES:
+            COMO FUNCIONA NOSSO PROJETO
+        -->
+        <section class="slide" id="dw">
+            <section class="desenvolvimento-web primer">
+                <h2>O que é desenvolvimento web: </h2>
+                <p>
+                    Desenvolvimento web é a área da tecnologia voltada à construção de sites, aplicativos, softwares, bancos de dados e quaisquer outras ferramentas que, de certa forma, constroem a internet como a conhecemos hoje.
+                </p>
+                <p>
+                    Os profissionais destas áreas são os programadores, ou desenvolvedores web: pessoas capacitadas para compreender, manusear e se utilizar de linguagens de programação para construir sistemas complexos voltados ao serviço do usuário.
+                </p>
+
+                <p>
+                    Dentro da carreira de desenvolvedor web temos algumas especialidades, e o estudante da área pode escolher por si só em qual quer se especializar: 
+                    <ul>
+                        <li>Desenvolvedor Front-End;</li>
+                        <li>Desenvolvedor Back-End;</li>
+                        <li>Desenvolvedor Full-Stack.</li>
+                    </ul>
+                </p>
+            </section>
+            <section class="linguagens-dw second">
+                <h2>Linguagens usadas no desenvolvimento web: </h2>
+
+                <ul>
+                    <li>HTML;</li>
+                    <li>CSS;</li>
+                    <li>JAVA SCRIPT (JS);</li>
+                    <li>PHP;</li>
+                    <li>JAVA</li>
+                </ul>
+
+                <img src="imagens/exemplo.jpg" alt="">
+            </section>
         </section>
+
+        <section class="slide" id="poo">
+            <section class="o-que-e-poo primer">
+                <h2>O que é POO: </h2>
+                <p>
+                    Fora de sua sigla POO significa "Programação orientada a objeto", e coniste em um dos paradigmas da linguagem de programação. 
+                </p>
+                <p>
+                    No universo de desenvolvimento de softwares acontece o mesmo que em outras áreas, a existência de diferentes caminhos para se chegar ao mesmo resultado, um desses caminhos na programação seria o POO, e outro a programação estruturada que segue um fluxo de rotina, mesmo sendo quebrada em subrotinas. 
+                </p>
+                <p>
+                    A grande diferença de POO para a programação estrutura é o fato dela usufruir de classes, herança e polimorfismo, coisa que não se ver na PE. Como dito no nome, o POO passa a orientar objetos e classificál-los. 
+                </p>
+                <p>
+                    Consideremos um carro, poderíamos programá-lo em POO, já que ele teria cores, marca e adereços diferentes de outros carros, já na programação estruturada isso não aconteceria e todos os carros teriam os mesmos atributos.
+                </p>
+            </section>
+            <section class="para-que-serve-e-linguagens second">
+                <h2>Para que serve POO:</h2>
+
+                <p>
+                    POO exerce várias funções, porém a principal é tornar o seu projeto bem mais dinâmico facilitando a vida tanto do back-end quanto do front-end fazendo também com que seu usuário consiga utilizar seu projeto de forma cada vez mais fácil e mais acessível tornando tudo bem mas "automatico".
+                </p>
+                <p>
+                    Podemos voltar a fazer outro exemplo, pensemos que temos uma lampâda, caso percebessemos que ela estava queimando, na programação estruturada teríamos que fazer toda uma estrutura de condições apenas para testar isso. 
+                    Mas caso estivessemos usando POO para isso, bastava saber se a Lampâda estava queimada ou o seu bucal, apenas olhando seus atributos. 
+                </p>
+
+                <p>
+                    <ul>
+                        <p>Linguagens de programação usadas em POO: </p>
+                        <li>Python;</li>
+                        <li>JavaScript;</li>
+                        <li>Entre várias outras.</li>
+                    </ul>
+                </p>
+            </section>
+        </section>
+
+        <section class="slide" id="como-surgiu-o-projeto">
+            <section class="projeto-inicial primer">
+                <img src="imagens/projeto-inicial.jpg" alt="">
+                <img src="imagens/projeto-inicial-testado.jpg" alt="">
+            </section>
+
+            <section class="texto-projeto-inicial second">
+                <h2>Como surgiu nosso projeto:</h2>
+                <p>
+                    O nosso projeto de Desenvolvimento Web veio de um código que fizermos em aula para que aprendessemos CRUD (Create - Read - Update - Delete). Nesse código aplicamos pela primeira vez na matéria de desenvolvimento web o POO, para que pudessemos mexer com os novos produtos que serião criados de maneira independente, pois esse é o objetivo de POO. 
+                </p>
+                <p>
+                    O intuito do site era a listagem de novos produtos dentro de uma lista no HTML, e o usuário que estivesse mexendo na listagem dos produtos poderia controla-los, apagando-os, criando novos produtos ou até mesmo editando os que já estavam na lista. 
+                </p>
+                <p>
+                    Para que todas essas funções funcionassem tivemos que aplicar com a lógica da turma o famoso CRUD, que fora de sua sigla e já traduzido ficaria como "Criação, Leitura, Atualização e Remoção", esses site poderia até mesmo ser adaptado para um site de lista de tarefas. 
+                </p>
+                <section class="slider">
+                    <div class="slides">
+                        <!--Radio button-->
+                        <input type="radio" name="radio-btn" id="radio-1">
+                        <input type="radio" name="radio-btn" id="radio-2">
+                        <input type="radio" name="radio-btn" id="radio-3">
+                        <input type="radio" name="radio-btn" id="radio-4">
+                        <!--Radio Button-->
+
+                        <!--Slide image-->
+
+                        <div class="slide-slider first">
+                            <img src="imagens/lista-de-tarefas-visu.png" alt="">
+                        </div>
+
+                        <div class="slide-slider">
+                            <img src="imagens/lista-de-tarefas-visu-teste.png" alt="">
+                        </div>
+
+                        <!--Slide image-->
+
+                        <!--Navigation auto-->
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn-1"></div>
+                            <div class="auto-btn-2"></div>
+                        </div>
+
+                        <!--Navigation auto-->
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio-1" class="manual-btn"></label>
+                        <label for="radio-2" class="manual-btn"></label>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section class="slide" id="projetos-anteriores">
+            <section class="projetos-anteriores-texto primer">
+                <h2>Projetos anteriores: </h2>
+
+                <p>
+                    Como todo site passa por mudanças, o nosso não seria diferente, sendo refeito algumas vezes, tanto em design como em programação, mas ainda tínhamos que manter os requisitos que o professor pediu que foram: 
+                </p>
+                <p>
+                    <ul>
+                        <li>Ter produtos predefinidos;</li>
+                        <li>Aumentar a quantidade de produto;</li>
+                        <li>Listar produtos que foram comprados ou adicionados ao carrinho;</li>
+                        <li>Ter o total de todos os produtos.</li>
+                    </ul>
+                </p>
+                <p>
+                    Tendo isso em mente, começamos a fazer o site do inicio novamente, aproveitando do site antigo alguns métodos da classe que havíamos criado e também uma função que iniciava todo o layout do site.
+                </p>
+            </section>
+            <section class="projetos-anteriores-slide second">
+                <h2>Projetos anteriores: </h2>
+
+                <section class="slider-2">
+                    <div class="slides-2">
+                        <input type="radio" name="radio-btn-2" id="radio-projetos-1">
+                        <input type="radio" name="radio-btn-2" id="radio-projetos-2">
+                        <input type="radio" name="radio-btn-2" id="radio-projetos-3">
+                        <input type="radio" name="radio-btn-2" id="radio-projetos-4">
+
+                        <div class="slide-slider-2 first-2">
+                            <img src="imagens/nota-fiscal-visu.png" alt="">
+                        </div>
+
+                        <div class="slide-slider-2">
+                            <img src="imagens/nota-fiscal-teste.png" alt="">
+                        </div>
+
+                        <div class="slide-slider-2">
+                            <img src="imagens/nota-fiscal-incompleto-visu.png" alt="">
+                        </div>
+
+                        <div class="slide-slider-2">
+                            <img src="imagens/nota-fiscal-incompleto-testado.png" alt="">
+                        </div>
+
+                        <div class="navigation-auto-2">
+                            <div class="auto-btn-projetos-1"></div>
+                            <div class="auto-btn-projetos-2"></div>
+                            <div class="auto-btn-projetos-3"></div>
+                            <div class="auto-btn-projetos-4"></div>
+                        </div>
+
+                        <div class="manual-navigation-2">
+                            <label for="radio-projetos-1" class="manual-btn-2"></label>
+                            <label for="radio-projetos-2" class="manual-btn-2"></label>
+                            <label for="radio-projetos-3" class="manual-btn-2"></label>
+                            <label for="radio-projetos-4" class="manual-btn-2"></label>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section class="slide" id="funcionamento-do-projeto">
+            <a href="loja.html" class="projeto primer">
+                PROJETO
+            </a>
+        </section>
+
     </main>
 
-    <script>
-        produtos.listarProdutos()
-        produtos.carrinho()
-    </script>
+    <footer></footer>
+    <script src="script/slide.js"></script>
 </body>
 </html>
