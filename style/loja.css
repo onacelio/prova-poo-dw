@@ -12,6 +12,8 @@ header {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
+    position: sticky;
+    top: 0;
 }
 
 main {
@@ -165,11 +167,15 @@ main {
     margin-left: 5px;
 }
 
+.carrinho img {
+    margin-right: 5px;
+}
+
 footer {
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to left, rgb(75, 25, 121), #333);
-    height: 8vh;
+    height: 10vh;
     color: aliceblue;
 }

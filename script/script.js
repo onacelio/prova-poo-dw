@@ -76,7 +76,7 @@ class Produtos {
             let button = document.createElement('button')
 
             // DANDO ATRIBUTOS E VALORES AOS ELEMENTOS
-            div.setAttribute("class", "item-loja primer")
+            div.setAttribute("class", "item-loja")
             span.setAttribute('class', 'item-titulo')
             imagem.setAttribute('class', "item-imagem")
             divDetalhes.setAttribute('class', "item-detalhes")
