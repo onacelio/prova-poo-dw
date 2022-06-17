@@ -45,6 +45,21 @@ class Produtos {
             preco: 6.00,
             imagem: 'danone',
             categoria: 'FRIOS'
+        }, {
+            nome: 'Cajuína', 
+            preco: 5.00,
+            imagem: 'cajuina',
+            categoria: 'BEBIDA'
+        }, {
+            nome: 'Bolacha',
+            preco: 4.00,
+            imagem: 'bolacha',
+            categoria: 'BISCOITOS'
+        }, {
+            nome: 'gabinete',
+            preco: 499.90,
+            imagem: 'gabinete',
+            categoria: 'GABINETE'
         }]
     }
     
@@ -61,7 +76,7 @@ class Produtos {
             let button = document.createElement('button')
 
             // DANDO ATRIBUTOS E VALORES AOS ELEMENTOS
-            div.setAttribute("class", "item-loja")
+            div.setAttribute("class", "item-loja primer")
             span.setAttribute('class', 'item-titulo')
             imagem.setAttribute('class', "item-imagem")
             divDetalhes.setAttribute('class', "item-detalhes")
@@ -136,7 +151,7 @@ class Produtos {
 
     levarCarrinho(titulo, preco, src) {
         let carrinhoLinha = document.createElement('div')
-        carrinhoLinha.setAttribute("class", "carrinho-linha")
+        carrinhoLinha.setAttribute("class", "carrinho-linha primer")
         let carrinhoItems = document.getElementsByClassName('carrinho-items')[0]
         let carrinhoItemNome = carrinhoItems.getElementsByClassName('carrinho-titulo')
         for(let i = 0; i < carrinhoItemNome.length; i++) {

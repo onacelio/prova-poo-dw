@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="style/loja.css">
-    <script src="script/script.js"></script>
-    <title>LOJA DE COMPRAS</title>
-</head>
-<body>
-    <header>
-        LOJA
-    </header>
-    
-    <main>
-        <section class="conteiner sessao-conteudo">
-            <h2>PRODUTOS</h2>
-            <section class="items-loja"></section>
-        </section>
-
-        <section class="conteiner sessao-conteudo carrinho-fixo">
-            <h2>CARRINHO</h2>
-            <section class="carrinho"></section>
-        </section>
-    </main>
-
-
-    <footer>
-        <h2>DEVELOPER: O NACÉLIO</h2>
-    </footer>
-
-    <script>
-        produtos.listarProdutos()
-        produtos.carrinho()
-    </script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <script src="https://unpkg.com/scrollreveal"></script>  
+        <link rel="stylesheet" href="style/loja.css">
+        <script src="script/script.js"></script>
+        <title>LOJA DE COMPRAS</title>
+    </head>
+    <body>
+        <header>
+            LOJA
+        </header>
+        
+        <main>
+            <section class="conteiner sessao-conteudo">
+                <h2>PRODUTOS</h2>
+                <section class="items-loja"></section>
+            </section>
+            
+            <section class="conteiner sessao-conteudo">
+                <h2>CARRINHO</h2>
+                <section class="carrinho"></section>
+            </section>
+        </main>
+        <script>
+            produtos.listarProdutos()
+            produtos.carrinho()
+        </script>
+        
+        
+        <footer class="primer">
+            <h2>DEVELOPER: O NACÉLIO</h2>
+        </footer>
+        
+        <script src="script/slideRevealLoja.js"></script>   
 </body>
 </html>
